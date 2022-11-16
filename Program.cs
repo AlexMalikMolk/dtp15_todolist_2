@@ -97,9 +97,21 @@
         public static void PrintHelp()
         {
             Console.WriteLine("Kommandon:");
-            Console.WriteLine("hjälp    lista denna hjälp");
-            Console.WriteLine("lista    lista att-göra-listan");
-            Console.WriteLine("sluta    spara att-göra-listan och sluta");
+            Console.WriteLine("hjälp                \t lista denna hjälp");
+            Console.WriteLine("lista                \t lista att-göra-listan");
+            Console.WriteLine("sluta                \t spara att-göra-listan och sluta");
+            //lägg till:  ny, beskriv, spara, ladda, aktivera/uppgift/, klar/uppgift/, vänta/uppgift/, sluta  
+            //Gör raderna mer läsbara genom att lägga till tab mellan kolumnerna
+            Console.WriteLine("ny                   \t lägg till ny uppgift");
+            Console.WriteLine("beskriv              \t beskriv en uppgift");
+            Console.WriteLine("spara                \t spara att-göra-listan");
+            Console.WriteLine("ladda                \t ladda att-göra-listan");
+            Console.WriteLine("aktivera/uppgift/    \t aktivera en uppgift");
+            Console.WriteLine("klar/uppgift/        \t avklara en uppgift");
+            Console.WriteLine("vänta/uppgift/       \t vänta på en uppgift");
+            
+
+
         }
     }
     class MainClass
