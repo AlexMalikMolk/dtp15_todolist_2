@@ -1,7 +1,7 @@
 TBD
 -----------
 
-
+Generera felmeddelande vid fealktig input i aktivera, klar, vänta
 
 
 
