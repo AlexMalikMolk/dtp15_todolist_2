@@ -150,7 +150,10 @@ namespace dtp15_todolist
                 if (item.task == task)
                 {
                     item.status = Active;
+                    Console.WriteLine($"Uppgiften {task} är nu aktiv");
+
                 }
+               
             }
         }
 
@@ -163,7 +166,9 @@ namespace dtp15_todolist
                 if (item.task == task)
                 {
                     item.status = Ready;
+                    Console.WriteLine($"Uppgiften {task} är nu klar");
                 }
+                
             }
         }
 
@@ -176,11 +181,14 @@ namespace dtp15_todolist
                 if (item.task == task)
                 {
                     item.status = Waiting;
+                    Console.WriteLine($"Uppgiften {task} är nu väntande");
+
                 }
             }
+            
+            
+
         }
-
-
         public static void PrintHelp()
         {
             Console.WriteLine("Kommandon:");
@@ -210,6 +218,12 @@ namespace dtp15_todolist
 
         public static void Main(string[] args)
         {
+
+            
+            
+
+
+
             Console.WriteLine("Välkommen till att-göra-listan!");
             //Todo.ReadListFromFile();
             //Todo.PrintTodoList();
@@ -289,15 +303,12 @@ namespace dtp15_todolist
                 //Ändra status till aktiv
                 else if (command.Contains("aktivera"))
                 {
-                    try
-                    {
-                        var task = command.Split('/')[1];
-                        Todo.setActive(task);
-                    }
-                    catch
-                    {
-                        
-                    }
+
+                    var task = command.Split(' ', 2)[1];
+                    Todo.setActive(task);
+
+
+
                 }
 
 
@@ -306,15 +317,10 @@ namespace dtp15_todolist
                 //Ändra status till klar
                 else if (command.Contains("klar"))
                 {
-                    try
-                    {
-                        var task = command.Split('/')[1];
-                        Todo.setReady(task);
-                    }
-                    catch
-                    {
-                        
-                    }
+
+                    var task = command.Split(' ', 2)[1];
+                    Todo.setReady(task);
+
                 }
 
 
@@ -323,21 +329,11 @@ namespace dtp15_todolist
                 //Ändra status till vänta
                 else if (command.Contains("vänta"))
                 {
-                    try
-                    {
-                        var task = command.Split('/')[1];
-                        Todo.setWaiting(task);
-                    }
-                    catch
-                    {
-                        
-                    }
+
+                    var task = command.Split(' ', 2)[1];
+                    Todo.setWaiting(task);
+
                 }
-
-                
-
-
-
 
                 else
                 {
@@ -354,23 +350,7 @@ namespace dtp15_todolist
     {
 
 
-        public static string ReadString()
-        {
-            string text = Console.ReadLine();
-            return text;
-        }
-        static public string ReadInt(string prompt)
-        {
-            Console.Write(prompt);
-            return Console.ReadLine();
-        }
-
-
-        static public string ReadString(string prompt)
-        {
-            Console.Write(prompt);
-            return Console.ReadLine();
-        }
+       
 
 
 
