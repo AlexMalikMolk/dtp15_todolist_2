@@ -142,12 +142,43 @@ namespace dtp15_todolist
         }
 
 
+        //Delkarera setActive för att kunna hantera "aktivera /uppgift/"
+        public static void setActive(String task)
+        {
+            foreach (var item in list)
+            {
+                if (item.task == task)
+                {
+                    item.status = Active;
+                }
+            }
+        }
 
 
+        //Deklarera setReady för att kunna hantera "klar /uppgift/"
+        public static void setReady(String task)
+        {
+            foreach (var item in list)
+            {
+                if (item.task == task)
+                {
+                    item.status = Ready;
+                }
+            }
+        }
 
 
-
-
+        //Deklarera setWaiting för att kunna hantera "vänta /uppgift/"
+        public static void setWaiting(String task)
+        {
+            foreach (var item in list)
+            {
+                if (item.task == task)
+                {
+                    item.status = Waiting;
+                }
+            }
+        }
 
 
         public static void PrintHelp()
@@ -255,6 +286,55 @@ namespace dtp15_todolist
                 }
 
 
+                //Ändra status till aktiv
+                else if (command.Contains("aktivera"))
+                {
+                    try
+                    {
+                        var task = command.Split('/')[1];
+                        Todo.setActive(task);
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+
+
+
+
+                //Ändra status till klar
+                else if (command.Contains("klar"))
+                {
+                    try
+                    {
+                        var task = command.Split('/')[1];
+                        Todo.setReady(task);
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+
+
+
+
+                //Ändra status till vänta
+                else if (command.Contains("vänta"))
+                {
+                    try
+                    {
+                        var task = command.Split('/')[1];
+                        Todo.setWaiting(task);
+                    }
+                    catch
+                    {
+                        
+                    }
+                }
+
+                
 
 
 
