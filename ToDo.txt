@@ -1,10 +1,16 @@
 TBD
+-----------
 
-Försöka få command.Split('/')[1]; att fungera med att skriva mellanslag istället för snedstreck.
+
+
 
 
 
 NYI
+---------
+
+KLAR
+----------
 lägg till:  ny, beskriv, spara, ladda, aktivera/uppgift/, klar/uppgift/, vänta/uppgift/, sluta 
 Gör raderna mer läsbara genom att lägga till tab mellan kolumnerna
 Göra om lista funktionen så den endast visar aktiva tasks 
@@ -27,5 +33,4 @@ Lägg till funktioner för:
 Ändra status till vänta
 
 
-
-
+Försöka få command.Split('/')[1]; att fungera med att skriva mellanslag istället för snedstreck. - Uppgift KLAR
