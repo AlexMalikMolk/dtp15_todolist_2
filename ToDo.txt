@@ -1,3 +1,31 @@
 TBD
 
+Försöka få command.Split('/')[1]; att fungera med att skriva mellanslag istället för snedstreck.
+
+
+
 NYI
+lägg till:  ny, beskriv, spara, ladda, aktivera/uppgift/, klar/uppgift/, vänta/uppgift/, sluta 
+Gör raderna mer läsbara genom att lägga till tab mellan kolumnerna
+Göra om lista funktionen så den endast visar aktiva tasks 
+Lägg till funktioner för att kunna lista "aktiva"(active) med kommandot "lista"
+
+Lägg till funktion för att hantera "bekriv" i TodoItem
+
+Deklarera setActive för att kunna hantera "aktivera/uppgift/"
+Deklarera setActive för att kunna hantera "aktivera/uppgift/"
+Deklarera setReady för att kunna hantera "klar/uppgift/"
+Deklarera setWaiting för att kunna hantera "vänta/uppgift/"
+
+Skapa en ny uppgift
+Lista alla aktiva uppgifter inklusive beskrivning
+Spara information i todo.lis
+
+Lägg till funktioner för:
+Ändra status till aktiv
+Ändra status till klar
+Ändra status till vänta
+
+
+
+
